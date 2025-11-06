@@ -2,6 +2,7 @@
 const form = document.getElementById("calorieForm");
 const resultDiv = document.getElementById("result");
 const copyBtn = document.getElementById("copyBtn");
+const dhikrBtn = document.getElementById("dhikrBtn");
 
 // الاستماع لحدث إرسال النموذج
 form.addEventListener("submit", function(e) {
@@ -53,4 +54,14 @@ form.addEventListener("submit", function(e) {
             alert("تم نسخ النتيجة!");
         });
     };
+});
+
+// زر الذكر
+dhikrBtn.addEventListener("click", () => {
+    const userDhikr = prompt("اكتب ذكرًا أو دعاءً تذكر الله به:");
+    if (userDhikr && userDhikr.trim() !== "") {
+        alert("جزاك الله خيرًا! ذكرك: " + userDhikr);
+    } else {
+        alert("لم يتم كتابة أي ذكر.");
+    }
 });

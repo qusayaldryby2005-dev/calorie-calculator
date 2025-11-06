@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة السعرات الحرارية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍎 حاسبة السعرات الحرارية اليومية</h1>
+        <p>أدخل بياناتك لمعرفة عدد السعرات التي يحتاجها جسمك يوميًا.</p>
+
+        <form id="calorieForm">
+            <label>العمر (بالسنوات):</label>
+            <input type="number" id="age" required>
+
+            <label>الطول (سم):</label>
+            <input type="number" id="height" required>
+
+            <label>الوزن (كغ):</label>
+            <input type="number" id="weight" required>
+
+            <label>الجنس:</label>
+            <select id="gender">
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+            </select>
+
+            <label>مستوى النشاط:</label>
+            <select id="activity">
+                <option value="1.2">خمول (قليل الحركة)</option>
+                <option value="1.375">نشاط خفيف (3 أيام/أسبوع)</option>
+                <option value="1.55">نشاط متوسط (5 أيام/أسبوع)</option>
+                <option value="1.725">نشاط عالي (يوميًا)</option>
+            </select>
+
+            <button type="submit">احسب السعرات 🔥</button>
+        </form>
+
+        <div id="result" class="result"></div>
+        <button id="copyBtn" class="copyBtn">نسخ النتيجة</button>
+
+        <div class="donate">
+            <a href="https://ko-fi.com/اسم_حسابك" target="_blank">
+                <button>☕ ادعمني على Ko-fi</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
